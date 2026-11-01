@@ -1,0 +1,45 @@
+{
+  "first": {
+    "created": true,
+    "event_id": "f9815dbb-5ec3-4279-ae41-67d83cc4dc84",
+    "order_id": "2229fb41-ac93-4530-bc40-bf5925836f38"
+  },
+  "injected_failure": {
+    "attempt": 1,
+    "event_id": "f9815dbb-5ec3-4279-ae41-67d83cc4dc84",
+    "new_delivery": false,
+    "outcome": "retry"
+  },
+  "leases_recovered": 1,
+  "replayed": {
+    "attempt": 2,
+    "event_id": "1d951a4a-dbba-46c5-95c0-0b7faf70f2d6",
+    "new_delivery": false,
+    "outcome": "delivered"
+  },
+  "retried": {
+    "attempt": 2,
+    "event_id": "f9815dbb-5ec3-4279-ae41-67d83cc4dc84",
+    "new_delivery": true,
+    "outcome": "delivered"
+  },
+  "second": {
+    "created": true,
+    "event_id": "1d951a4a-dbba-46c5-95c0-0b7faf70f2d6",
+    "order_id": "9fe1ffe1-0380-4a0a-9766-e148b9f851fb"
+  },
+  "simulated_crash": {
+    "attempt": 1,
+    "event_id": "1d951a4a-dbba-46c5-95c0-0b7faf70f2d6",
+    "new_delivery": true,
+    "outcome": "simulated_crash_after_delivery"
+  },
+  "stats": {
+    "audit_records": 10,
+    "deliveries": 2,
+    "events": {
+      "delivered": 2
+    },
+    "orders": 2
+  }
+}

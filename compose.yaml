@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    volumes: ["outbox-data:/data"]
+  worker:
+    build: .
+    command: ["outbox-lab", "loop", "--interval", "1"]
+    volumes: ["outbox-data:/data"]
+volumes:
+  outbox-data:
